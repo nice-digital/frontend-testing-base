@@ -16,12 +16,12 @@ Run Selenium server by doing this:
 
 the terminal will now have selenium server running
 
-## For Windows 
+### For Windows 
 Start another terminal and run:
 
 ```npm run test-win```
 
-## For MACOSX / Linux
+### For MACOSX / Linux
 Start another terminal and run:
 
 ```npm test```
