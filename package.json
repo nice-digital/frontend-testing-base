@@ -4,7 +4,8 @@
   "description": "Front end tests for NICE org",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/webdriverio/bin/wdio wdio.conf.js"
+    "test": "node_modules/webdriverio/bin/wdio wdio.conf.js",
+    "test-win": "node node_modules/webdriverio/bin/wdio wdio.conf.js"
   },
   "repository": {
     "type": "git",
