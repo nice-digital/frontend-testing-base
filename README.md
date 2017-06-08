@@ -1,4 +1,4 @@
-# nice-frontend-tests
+# NICE frontend tests
 Front end tests for NICE org
 
 
@@ -16,10 +16,14 @@ Run Selenium server by doing this:
 
 the terminal will now have selenium server running
 
+## For Windows 
+Start another terminal and run:
+
+```npm run test-win```
+
+## For MACOSX / Linux
 Start another terminal and run:
 
 ```npm test```
 
-BOOOM!!!
-
-
+This should start a web browser and run your tests.
