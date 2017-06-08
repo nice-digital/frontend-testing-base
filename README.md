@@ -4,8 +4,9 @@ Front end tests for NICE org
 
 # Getting started
 
-git clone
-npm i
+- git clone https://github.com/nhsevidence/nice-frontend-tests.git
+- cd nice-frontend-tests
+- npm i
 
 Run Selenium server by doing this:
 
