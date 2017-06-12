@@ -7,9 +7,10 @@ module.exports = function() {
   });
 
   this.When(/^I click on the find guidance button$/, function() {
+    $("a[href='/guidance']").click();
   });
 
   this.Then(/^I should see the guidance page$/, function() {
   });
-}
+};
 
