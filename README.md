@@ -27,3 +27,12 @@ Start another terminal and run:
 ```npm test```
 
 This should start a web browser and run our example test.
+
+
+## Notes
+#### Running individual specs
+It would be nice to run one feature only maybe through tags but this seems to be difficult (see https://github.com/webdriverio/webdriverio/issues/1247)
+
+So to run only one feature do this:
+
+```npm run only features\homepage.feature```
