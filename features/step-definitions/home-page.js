@@ -3,7 +3,7 @@ var chai = require("chai");
 chai.should();
 
 module.exports = function() {
-  this.Given(/^I am on the homepage$/, function() {
+  this.Given(/^I am on the NICE homepage$/, function() {
     browser.url('http://test.nice.org.uk/');
   });
 
@@ -13,11 +13,7 @@ module.exports = function() {
 
   this.Then(/^I should see the guidance page$/, function() {
     //browser.debug();
-    //
-    console.log(browser.getUrl());
-    // var exp_url = browser.getUrl();
-    // console.log(exp_url);
-    // assert.equal('https://test.nice.org.uk/guidance', exp_url);
+    $("h1='Find Guidance'").should.not.be.undefined;
   });
 };
 
