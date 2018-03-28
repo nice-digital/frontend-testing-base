@@ -1,40 +1,68 @@
-# Front end testing base repository
-This is a base repository to start any type of browser based testing.
-Here we've used a package called webdriverio which is a helper library for selenium written in Node.  For more info go to http://webdriver.io/
+# Front end testing base
 
+> Start point for browser based testing
 
-# Getting started
+## What is it?
+
+A starter boilerplate project for writing browser-based functional tests.
+
+We've used a package called [WebdriverIO](http://webdriver.io/) which is a helper library for selenium written in Node.
+
+### Features
+
+- Single command `npm test` to run tests, using [wdio-selenium-standalone-service](https://github.com/webdriverio/wdio-selenium-standalone-service)
+- [Cucumber framework](https://cucumber.io/) for writing BDD [features](features)
+- Uses [@nice-digital/wdio-cucumber-steps](https://github.com/nhsevidence/wdio-cucumber-steps) shared step definitions
+- [TeamCity wdio config](wdio.teamcity.conf.js) with [TeamCity reporter](https://github.com/sullenor/wdio-teamcity-reporter)
+- [docker-compose script](run.sh) for running tests against headless Chrome and Firefox in Docker
+- [Babel](https://babeljs.io/) for writing custom step definitions in [ES6](https://github.com/lukehoban/es6features#readme) and [Flow](https://flow.org)
+
+## Required software
+
+- Node
+- Chrome
+- Firefox - optional
+
+## Getting started
 
 - ```git clone https://github.com/nhsevidence/frontend-testing-base.git```
 - ```cd frontend-testing-base```
 - ```npm i```
 
-After the install has finished run the Selenium server by doing this:
+After the install has finished run the tests by running:
 
- - ```./node_modules/selenium-standalone/bin/selenium-standalone install ```
- - ```./node_modules/selenium-standalone/bin/selenium-standalone start ```
+ - ```npm test```
 
-The terminal will now have selenium server running so start another terminal
+This starts a selenium server and opens Chrome to run the tests. Optionally, if you've got Firefox installed you can add another [capability](http://webdriver.io/guide/getstarted/configuration.html#desiredCapabilities) in *wdio.conf.js*.
 
-### For Windows 
-Start another terminal and run:
+> Note: On Windows run in *cmd* and not *GitBash* otherwise the window just hangs.
 
-```npm run test-win```
+### Excluding tests
 
-### For MACOSX / Linux
-Start another terminal and run:
+Exclude tests by using the `@pending` [cucumber tag](https://github.com/cucumber/cucumber/wiki/Tags).
 
-```npm test```
+### Running single tests
 
-This should start a web browser and run our example test.
+TODO
 
+## Docker
 
-## Notes
-#### Running individual specs
-It would be nice to run only one feature, maybe through tags, but this seems to be difficult (see https://github.com/webdriverio/webdriverio/issues/1247)
+Running tests on Docker is a good option as it means you don't need browsers installed on the host machine, and the Selenium grid is automatically created for you. This is useful on a TeamCity build agent where you can't rely on Chrome and Firefox being installed.
 
-So to run only one feature do this:
+In bash:
 
-```npm run only features\homepage.feature```
+```sh
+./run.sh
+```
 
-If you have many scenarios in one feature then let's talk.
+Or in CMD on Windows:
+
+```sh
+run
+```
+
+Or in PowerShell:
+
+```sh
+cmd /c "run"
+```
