@@ -5,7 +5,8 @@
   "description": "A place from which to start browser driven testing",
   "main": "wdio.conf.js",
   "scripts": {
-    "test": "node node_modules/webdriverio/bin/wdio"
+    "test": "node node_modules/webdriverio/bin/wdio",
+    "test:teamcity": "node node_modules/webdriverio/bin/wdio wdio.teamcity.conf.js"
   },
   "repository": {
     "type": "git",
