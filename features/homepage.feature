@@ -3,6 +3,8 @@ Feature: NICE org feature
   I want to be able to see guidance 
 
   Scenario: Load home page 
-    Given I am on the NICE homepage 
-    When I click on the find guidance button
-    Then I should see the guidance page 
+    Given I open the url "https://www.nice.org.uk/"
+    When I click on the link "Find NICE guidance"
+    Then I expect that the path is "/guidance"
+    And I expect that element "h1" matches the text "Find guidance"
+    And I expect that the title is "Guidance | NICE"

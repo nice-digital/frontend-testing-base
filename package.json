@@ -1,28 +1,36 @@
 {
-  "name": "nice-frontend-tests",
+  "name": "@nice-digital/frontend-testing-base",
+  "private": true,
   "version": "1.0.0",
-  "description": "Front end tests for NICE org",
-  "main": "index.js",
+  "description": "A place from which to start browser driven testing",
+  "main": "wdio.conf.js",
   "scripts": {
-    "test": "node_modules/webdriverio/bin/wdio wdio.conf.js",
-    "test-win": "node node_modules/webdriverio/bin/wdio wdio.conf.js"
+    "test": "node node_modules/webdriverio/bin/wdio",
+    "test:teamcity": "node node_modules/webdriverio/bin/wdio wdio.teamcity.conf.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nhsevidence/nice-frontend-tests.git"
+    "url": "git+https://github.com/nhsevidence/frontend-testing-base.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nhsevidence/nice-frontend-tests/issues"
-  },
-  "homepage": "https://github.com/nhsevidence/nice-frontend-tests#readme",
+  "author": "NICE Digital Services",
+  "contributors": [
+    "Ian Routledge <ian@ediblecode.com>",
+    "Dave Wong"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/nhsevidence/frontend-testing-base#readme",
   "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-register": "^6.26.0",
     "chai": "^4.0.2",
-    "selenium-standalone": "^6.4.1",
-    "wdio-cucumber-framework": "^0.3.1",
-    "wdio-spec-reporter": "^0.1.0",
+    "wdio-cucumber-framework": "^1.1.0",
+    "wdio-selenium-standalone-service": "0.0.10",
+    "wdio-spec-reporter": "^0.1.4",
     "wdio-teamcity-reporter": "^1.1.1",
-    "webdriverio": "^4.8.0"
+    "webdriverio": "^4.12.0"
+  },
+  "dependencies": {
+    "@nice-digital/wdio-cucumber-steps": "^0.1.1"
   }
 }
