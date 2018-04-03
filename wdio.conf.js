@@ -14,7 +14,10 @@ exports.config = {
     // Assume user has Chrome and Firefox installed.
     capabilities: [
         {
-            browserName: "chrome"
+            browserName: "chrome",
+            chromeOptions: {
+                args: ["--window-size=1366,768"]
+            }
         }
     ],
 
