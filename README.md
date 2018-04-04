@@ -29,13 +29,23 @@ We've used a package called [WebdriverIO](http://webdriver.io/) which is a helpe
 - ```cd frontend-testing-base```
 - ```npm i```
 
-After the install has finished run the tests by running:
+After the install has finished run the tests by running the following command. This starts a selenium server and opens Chrome to run the tests:
 
- - ```npm test```
-
-This starts a selenium server and opens Chrome to run the tests. Optionally, if you've got Firefox installed you can add another [capability](http://webdriver.io/guide/getstarted/configuration.html#desiredCapabilities) in *wdio.conf.js*.
+```sh
+npm test
+```
 
 > Note: On Windows run in *cmd* and not *GitBash* otherwise the window just hangs.
+
+Optionally, if you've got Firefox installed you can add another [capability](http://webdriver.io/guide/getstarted/configuration.html#desiredCapabilities) in *wdio.conf.js*:
+
+```diff
+capabilities: [
++        {
++            browserName: "firefox"
++        }
+    ]
+```
 
 ### Excluding tests
 
