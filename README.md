@@ -41,9 +41,29 @@ This starts a selenium server and opens Chrome to run the tests. Optionally, if 
 
 Exclude tests by using the `@pending` [cucumber tag](https://github.com/cucumber/cucumber/wiki/Tags).
 
-### Running single tests
+### Running single features
 
-TODO
+To run a single feature file, use the following command:
+
+```sh
+npm test -- --spec ./features/homepage.feature
+```
+
+Note: you can pass in multiple files, separated by a comma.
+
+Or you can use a keyword to filter e.g.:
+
+```sh
+npm test -- --spec homepage
+```
+
+Finally, if you've grouped your specs into suites you can run and individual suite with:
+
+```sh
+npm test -- --suite homepage
+```
+
+See [organizing test suites](http://webdriver.io/guide/testrunner/organizesuite.html) in the WebdriverIO docs for more info.
 
 ## Docker
 
