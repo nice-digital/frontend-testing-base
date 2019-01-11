@@ -2,6 +2,18 @@
 
 > Start point for browser based testing
 
+- [Front end testing base](#front-end-testing-base)
+  - [What is it?](#what-is-it)
+    - [Features](#features)
+  - [Required software](#required-software)
+    - [Optional software](#optional-software)
+      - [Firefox](#firefox)
+      - [Cucumber (Gherkin) Full Support](#cucumber-gherkin-full-support)
+  - [Getting started](#getting-started)
+    - [Excluding tests](#excluding-tests)
+    - [Running single features](#running-single-features)
+  - [Docker](#docker)
+
 ## What is it?
 
 A starter boilerplate project for writing browser-based functional tests.
@@ -16,12 +28,42 @@ We've used a package called [WebdriverIO](http://webdriver.io/) which is a helpe
 - [TeamCity wdio config](wdio.teamcity.conf.js) with [TeamCity reporter](https://github.com/sullenor/wdio-teamcity-reporter)
 - [docker-compose script](run.sh) for running tests against headless Chrome and Firefox in Docker
 - [Babel](https://babeljs.io/) for writing custom step definitions in [ES6](https://github.com/lukehoban/es6features#readme) and [Flow](https://flow.org)
+- [Cucumber (Gherkin) Full Support VSCode](https://marketplace.visualstudio.com/items?itemName=alexkrechik.cucumberautocomplete#overview) extension support
 
 ## Required software
 
 - Node
 - Chrome
-- Firefox - optional
+
+### Optional software
+
+#### Firefox
+
+If you've got Firefox installed, add another [capability](http://webdriver.io/guide/getstarted/configuration.html#desiredCapabilities) in *wdio.conf.js* to run tests against both Chrome and Firefox:
+
+```diff
+capabilities: [
++        {
++            browserName: "firefox"
++        }
+    ]
+```
+
+#### Cucumber (Gherkin) Full Support
+
+The [Cucumber (Gherkin) Full Support VSCode extension](https://marketplace.visualstudio.com/items?itemName=alexkrechik.cucumberautocomplete#overview) is great for intellisense for step definitions.
+
+Install the extension and configure by adding the following to *.vscode/settings.json*:
+
+```diff
+{
++    "cucumberautocomplete.steps": [
++        "node_modules/@nice-digital/wdio-cucumber-steps/src/given/definitions.js",
++        "node_modules/@nice-digital/wdio-cucumber-steps/src/when/definitions.js",
++        "node_modules/@nice-digital/wdio-cucumber-steps/src/then/definitions.js",
++    ]
+}
+```
 
 ## Getting started
 
@@ -36,16 +78,6 @@ npm test
 ```
 
 > Note: On Windows run in *cmd* and not *GitBash* otherwise the window just hangs.
-
-Optionally, if you've got Firefox installed you can add another [capability](http://webdriver.io/guide/getstarted/configuration.html#desiredCapabilities) in *wdio.conf.js*:
-
-```diff
-capabilities: [
-+        {
-+            browserName: "firefox"
-+        }
-    ]
-```
 
 ### Excluding tests
 

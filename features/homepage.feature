@@ -10,7 +10,7 @@ Feature: Homepage
     When I click on the link "Find NICE guidance"
     Then I expect that the path is "/guidance"
     And I expect that element "h1" matches the text "Find guidance"
-    And I expect that the title is "Guidance | NICE"
+    And I expect that the title is "Find guidance | NICE"
 
   Scenario: Perform a search
     Then I wait on element "[name='q']" to exist
