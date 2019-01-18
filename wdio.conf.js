@@ -6,6 +6,24 @@ exports.config = {
     services: ["selenium-standalone"],
     seleniumLogs: "./logs",
 
+    // https://github.com/webdriverio/webdriverio/issues/1924#issuecomment-286123701
+    seleniumArgs: {
+        drivers: {
+            chrome: {
+                version: 2.45,
+                baseURL: "https://chromedriver.storage.googleapis.com"
+            }
+        }
+    },
+    seleniumInstallArgs: {
+        drivers: {
+            chrome: {
+                version: 2.45,
+                baseURL: "https://chromedriver.storage.googleapis.com"
+            }
+        }
+    },
+
     specs: [
         "./features/**/*.feature"
     ],
