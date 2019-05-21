@@ -19,11 +19,18 @@
   ],
   "license": "MIT",
   "homepage": "https://github.com/nhsevidence/frontend-testing-base#readme",
+  "engines": {
+    "node": ">= 6.3"
+  },
   "devDependencies": {
-    "babel-preset-env": "^1.6.1",
+    "@nice-digital/wdio-cucumber-steps": "^0.6.1",
+    "axe-core": "^3.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-flow": "^6.23.0",
     "babel-register": "^6.26.0",
     "chai": "^4.0.2",
+    "cross-env": "^5.2.0",
     "wdio-cucumber-framework": "^1.1.0",
     "wdio-selenium-standalone-service": "0.0.10",
     "wdio-spec-reporter": "^0.1.4",
@@ -31,6 +38,6 @@
     "webdriverio": "^4.12.0"
   },
   "dependencies": {
-    "@nice-digital/wdio-cucumber-steps": "^0.5.0"
+    "fibers": "^3.1.1"
   }
 }
