@@ -6,7 +6,7 @@
   "main": "wdio.conf.js",
   "scripts": {
     "test": "node node_modules/webdriverio/bin/wdio",
-    "test:teamcity": "node node_modules/webdriverio/bin/wdio wdio.teamcity.conf.js"
+    "test:allbrowsers": "cross-env ALL_BROWSERS=true npm test"
   },
   "repository": {
     "type": "git",

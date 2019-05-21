@@ -32,22 +32,8 @@ We've used a package called [WebdriverIO](http://webdriver.io/) which is a helpe
 
 ## Required software
 
-- Node
+- Node >= 6.3
 - Chrome
-
-### Optional software
-
-#### Firefox
-
-If you've got Firefox installed, add another [capability](http://webdriver.io/guide/getstarted/configuration.html#desiredCapabilities) in *wdio.conf.js* to run tests against both Chrome and Firefox:
-
-```diff
-capabilities: [
-+        {
-+            browserName: "firefox"
-+        }
-    ]
-```
 
 #### Cucumber (Gherkin) Full Support
 
@@ -106,6 +92,14 @@ npm test -- --suite homepage
 ```
 
 See [organizing test suites](http://webdriver.io/guide/testrunner/organizesuite.html) in the WebdriverIO docs for more info.
+
+if you want to run tests against all browsers locally you can do so via this command:
+
+```sh
+npm run test:allbrowsers
+```
+
+The baseUrl in wdio.conf.js determines which instance of guidance web that tests will run against, you can change this to suit your needs.
 
 ## Docker
 
