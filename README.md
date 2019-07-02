@@ -65,7 +65,7 @@ gyp ERR! stack Error: Can't find Python executable "python", you can set the PYT
 
 Please follow these instructions: Windows + OS X instructions here: https://github.com/nodejs/node-gyp
 
-`Also note it seems you need to be on node 10 in order to get past the fibers@2.0.2 install script error.`
+> Also note it seems you need to be on node 10 in order to get past the fibers@2.0.2 install script error.
 
 After the install has finished run the tests by running the following command. This starts a selenium server and opens Chrome to run the tests:
 
