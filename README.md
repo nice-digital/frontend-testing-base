@@ -24,7 +24,7 @@ We've used a package called [WebdriverIO](http://webdriver.io/) which is a helpe
 
 - Single command `npm test` to run tests, using [wdio-selenium-standalone-service](https://github.com/webdriverio/wdio-selenium-standalone-service)
 - [Cucumber framework](https://cucumber.io/) for writing BDD [features](features)
-- Uses [@nice-digital/wdio-cucumber-steps](https://github.com/nhsevidence/wdio-cucumber-steps) shared step definitions
+- Uses [@nice-digital/wdio-cucumber-steps](https://github.com/nice-digital/wdio-cucumber-steps) shared step definitions
 - [TeamCity wdio config](wdio.teamcity.conf.js) with [TeamCity reporter](https://github.com/sullenor/wdio-teamcity-reporter)
 - [docker-compose script](run.sh) for running tests against headless Chrome and Firefox in Docker
 - [Babel](https://babeljs.io/) for writing custom step definitions in [ES6](https://github.com/lukehoban/es6features#readme) and [Flow](https://flow.org)
