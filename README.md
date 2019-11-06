@@ -53,7 +53,7 @@ Install the extension and configure by adding the following to *.vscode/settings
 
 ## Getting started
 
-- ```git clone https://github.com/nhsevidence/frontend-testing-base.git```
+- ```git clone https://github.com/nice-digital/frontend-testing-base.git```
 - ```cd frontend-testing-base```
 - ```npm i```
 
