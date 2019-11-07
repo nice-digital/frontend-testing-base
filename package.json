@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nhsevidence/frontend-testing-base.git"
+    "url": "git+https://github.com/nice-digital/frontend-testing-base.git"
   },
   "author": "NICE Digital Services",
   "contributors": [
@@ -18,7 +18,7 @@
     "Dave Wong"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/nhsevidence/frontend-testing-base#readme",
+  "homepage": "https://github.com/nice-digital/frontend-testing-base#readme",
   "engines": {
     "node": ">= 6.3"
   },
