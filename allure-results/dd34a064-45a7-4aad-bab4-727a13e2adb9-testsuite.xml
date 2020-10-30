@@ -1,0 +1,197 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1604071221342' stop='1604071221347'>
+    <name>Homepage: Use search autocomplete</name>
+    <title>Homepage: Use search autocomplete</title>
+    <test-cases>
+        <test-case start='1604071221342' status='passed' stop='1604071221342'>
+            <name>Hook</name>
+            <title>Hook</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-88.0.4307.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604071221343' status='broken' stop='1604071221343'>
+            <name>Given I have a screen that is 1366 by 768 pixels</name>
+            <title>Given I have a screen that is 1366 by 768 pixels</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-88.0.4307.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "Given I have a screen that is 1366 by 768 pixels" is not definedYou can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>undefined:undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604071221343' status='broken' stop='1604071221343'>
+            <name>And I open the url "/"</name>
+            <title>And I open the url "/"</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-88.0.4307.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "And I open the url "/"" is not definedYou can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>undefined:undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604071221344' status='broken' stop='1604071221344'>
+            <name>Then I wait on element "[name='q']" to exist</name>
+            <title>Then I wait on element "[name='q']" to exist</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-88.0.4307.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "Then I wait on element "[name='q']" to exist" is not definedYou can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>undefined:undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604071221344' status='broken' stop='1604071221344'>
+            <name>When I set "paracet" to the inputfield "[name='q']"</name>
+            <title>When I set "paracet" to the inputfield "[name='q']"</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-88.0.4307.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "When I set "paracet" to the inputfield "[name='q']"" is not definedYou can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>undefined:undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604071221344' status='broken' stop='1604071221344'>
+            <name>Then I wait on element ".tt-suggestions" to exist</name>
+            <title>Then I wait on element ".tt-suggestions" to exist</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-88.0.4307.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "Then I wait on element ".tt-suggestions" to exist" is not definedYou can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>undefined:undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604071221344' status='broken' stop='1604071221345'>
+            <name>And I expect that element ".tt-suggestion:first-child" matches the text "Paracetamol"</name>
+            <title>And I expect that element ".tt-suggestion:first-child" matches the text "Paracetamol"</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-88.0.4307.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "And I expect that element ".tt-suggestion:first-child" matches the text "Paracetamol"" is not definedYou can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>undefined:undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604071221345' status='broken' stop='1604071221345'>
+            <name>When I press "ArrowDown"</name>
+            <title>When I press "ArrowDown"</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-88.0.4307.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "When I press "ArrowDown"" is not definedYou can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>undefined:undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604071221345' status='broken' stop='1604071221345'>
+            <name>And I press "Enter"</name>
+            <title>And I press "Enter"</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-88.0.4307.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "And I press "Enter"" is not definedYou can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>undefined:undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604071221346' status='broken' stop='1604071221346'>
+            <name>Then I expect that the path is "/Search?q=Paracetamol"</name>
+            <title>Then I expect that the path is "/Search?q=Paracetamol"</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-88.0.4307.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "Then I expect that the path is "/Search?q=Paracetamol"" is not definedYou can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>undefined:undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604071221346' status='passed' stop='1604071221347'>
+            <name>Hook</name>
+            <title>Hook</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-88.0.4307.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

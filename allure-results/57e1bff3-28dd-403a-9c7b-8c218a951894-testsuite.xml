@@ -1,0 +1,143 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1604071221252' stop='1604071221265'>
+    <name>Homepage: Navigate to find guidance page</name>
+    <title>Homepage: Navigate to find guidance page</title>
+    <test-cases>
+        <test-case start='1604071221253' status='passed' stop='1604071221256'>
+            <name>Hook</name>
+            <title>Hook</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-88.0.4307.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604071221258' status='broken' stop='1604071221260'>
+            <name>Given I have a screen that is 1366 by 768 pixels</name>
+            <title>Given I have a screen that is 1366 by 768 pixels</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-88.0.4307.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "Given I have a screen that is 1366 by 768 pixels" is not definedYou can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>undefined:undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604071221260' status='broken' stop='1604071221260'>
+            <name>And I open the url "/"</name>
+            <title>And I open the url "/"</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-88.0.4307.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "And I open the url "/"" is not definedYou can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>undefined:undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604071221261' status='broken' stop='1604071221261'>
+            <name>When I click on the link "Find NICE guidance"</name>
+            <title>When I click on the link "Find NICE guidance"</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-88.0.4307.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "When I click on the link "Find NICE guidance"" is not definedYou can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>undefined:undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604071221261' status='broken' stop='1604071221262'>
+            <name>Then I expect that the path is "/guidance"</name>
+            <title>Then I expect that the path is "/guidance"</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-88.0.4307.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "Then I expect that the path is "/guidance"" is not definedYou can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>undefined:undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604071221262' status='broken' stop='1604071221263'>
+            <name>And I expect that element "h1" matches the text "Find guidance"</name>
+            <title>And I expect that element "h1" matches the text "Find guidance"</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-88.0.4307.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "And I expect that element "h1" matches the text "Find guidance"" is not definedYou can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>undefined:undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604071221263' status='broken' stop='1604071221263'>
+            <name>And I expect that the title is "Find guidance | NICE"</name>
+            <title>And I expect that the title is "Find guidance | NICE"</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-88.0.4307.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "And I expect that the title is "Find guidance | NICE"" is not definedYou can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>undefined:undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604071221263' status='passed' stop='1604071221264'>
+            <name>Hook</name>
+            <title>Hook</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-88.0.4307.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
