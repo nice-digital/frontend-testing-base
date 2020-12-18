@@ -1,5 +1,5 @@
 Feature: Guidance list
-  As a user of NICE org 
+  As a user of NICE org
   I can use the guidance lists
 
   Background:
@@ -9,8 +9,8 @@ Feature: Guidance list
     Given I open the url "/guidance/<url>"
     Then I expect that the attribute "class" from element "#<id>" is "active listTab"
     Examples:
-        | url | id |
-        | published | linkPublished |
-        | inconsultation | linkConsultations |
-        | indevelopment | linkUpdatedGuidance |
-        | proposed | linkProposed |
+      | url            | id                  |
+      | published      | linkPublished       |
+      | inconsultation | linkConsultations   |
+      | indevelopment  | linkUpdatedGuidance |
+      | proposed       | linkProposed        |
