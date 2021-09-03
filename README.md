@@ -16,9 +16,7 @@
 
 ## What is it?
 
-A starter boilerplate project for writing browser-based functional tests.
-
-We've used a package called [WebdriverIO](http://webdriver.io/) which is a helper library for selenium written in Node.
+A starter boilerplate project for writing browser-based functional tests in [WebdriverIO V4](http://v4.webdriver.io/) which is a helper library for selenium written in Node.
 
 ### Features
 
