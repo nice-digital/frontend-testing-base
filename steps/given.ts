@@ -1,4 +1,4 @@
-import { Given } from "cucumber";
+import { Given } from "@wdio/cucumber-framework";
 import "@nice-digital/wdio-cucumber-steps/lib/given";
 
 // Uncomment below section to write custom step definitions
