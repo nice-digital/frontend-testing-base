@@ -1,4 +1,4 @@
-FROM node:10.24.1
+FROM node:14.17.3
 
 RUN mkdir -p /tests
 
